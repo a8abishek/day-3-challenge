@@ -3,21 +3,223 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    background-color: #dce0ec;
 }
 .layer{
-    border: 5px solid white;
-    padding: 10px;
-    padding-block: 100px;
-    /* background-color: black; */
+    background-color: #dce1ed;
+    padding: 30px;
 }
 .container{
+    background-color: #dce1ed;
+    border: 1px solid white;
+    padding: 20px;
+}
+.profile-fullcontainer{
     display: grid;
     grid-template-columns: 30% 70%;
-    padding-block: 20px;
-    border: 2px solid white;
+    column-gap: 10px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
 }
-.profile-container{
+.profile-me img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-inline: 115px;
+    margin-block: 20px;
+}
+.profile-me span{
+    margin-inline: 140px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.profile-me p{
+    margin-inline: 150px;
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 16px;
+}
+/**/
+.following-container{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 10px;
+}
+ .post-detail span{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 30px;
+    color: black;
+}
+.post-detail p{
+    font-size: 18px;
+    padding-left: 26px;
+    color: gray;
+    margin-block: 10px;
+}
+.follower-detail span{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: black;
+
+}
+.follower-detail p{
+    font-size: 18px;
+    padding-left: 12px;
+    color: gray;
+    margin-block: 10px;
+}
+.following-detail span{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: black;
+}
+.following-detail p{
+    font-size: 18px;
+    color: gray;
+     margin-block: 10px;
+}
+/**/
+.caption{
+    padding-inline:20px;
+}
+.caption h5{
+    font-size: 16px;
+    font-weight: bold;
+}
+.caption p{
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/**/
+.highlight-container h2{
+    font-size: 18px;
+    font-weight: bold;
+    padding-inline: 20px;
+}
+.highlight{
+    display: flex;
+    flex-direction: column;
+}
+.highlight img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-block: 5px;
+}
+.highlight span{
+    font-size: 12px;
+    padding-left:15px;
+}
+.f-highlight{
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
     padding: 10px;
+}
+/**/
+.nav-container{
+    margin-top: 20px;
+}
+.nav-container li{
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    margin-block: 16px;
+    cursor: pointer;
+    margin-left: 16px;
+}
+.nav-container svg{
+    width: 24px;
+    cursor: pointer;
+}
+.nav-container li span{
+    padding-inline: 5px;
+}
+#list{
+    margin-top:30px;
+}
+/**/
+.profile-leftside{
+    background-color:#f6f6f6;
+    border-radius: 25px;
+    padding: 20px;
+}
+.nav-container1{
+    display: flex;
+    margin-inline: 16px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.input-content input{
+    width: 275px;
+    padding-block:10px;
+    padding-inline: 16px;
+    border-radius: 50px;
     border: 1px solid white;
+}
+.side-nav{
+    align-items: center;
+}
+.side-nav li{
+    display: inline;
+    list-style-type: none;
+    margin-inline: 10px;
+}
+.side-nav button{
+    padding: 10px 20px;
+    border-radius:50px;
+    background:linear-gradient(to right,#ff5d19,#e5106c);
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor:pointer;
+}
+.side-nav svg{
+    width:25px;
+    height: 35px;
+    padding-top: 20px;
+}
+/**/
+.story-p img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #aa4e77;
+    padding: 2px;
+    margin-block: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.story-list{
+    display: flex;
+    margin-inline: 10px;
+    gap: 50px;
+}
+.line-s span{
+    padding-left: 10px;
+}
+#add-story{
+    background-color: rgb(69, 69, 166);
+    border-radius:50%;
+    padding-top: 4px;
+    position: absolute;
+    left: 37.5%;
+    top: 34%;
+}
+#live-story{
+    font-size: 10px;
+    background-color: #e5106c;
+    color: white;
+    padding: 2px;
+    position: absolute;
+    left: 43.9%;
+    top:35%;
 }
