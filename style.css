@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #dce0ec;
+}
+.layer{
+    border: 5px solid white;
+    padding: 10px;
+    padding-block: 100px;
+    /* background-color: black; */
+}
+.container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-block: 20px;
+    border: 2px solid white;
+}
+.profile-container{
+    padding: 10px;
+    border: 1px solid white;
+}
